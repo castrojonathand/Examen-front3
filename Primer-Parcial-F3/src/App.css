@@ -1,0 +1,40 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #646cffaa solid 1px;
+  padding: 1rem;
+  border-radius: 5%;
+}
+
+.input {
+  border: #646cffaa solid 1px;
+  margin: 0.2rem;
+}
+
+.input:hover {
+  filter: drop-shadow(0 0 0.2rem #646cffaa);
+}
+
+.card {
+  padding: 2em;
+  border: 0.2rem solid black;
+  border-radius: 5%;
+}
+
+.error {
+  color: red;
+}
+
+.boton {
+  margin-top: 1rem;
+  border-radius: 5%;
+  border: black;
+}
