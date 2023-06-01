@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import './App.css'
 import Card from './Componentes/Card'
 import Formulario from './Componentes/Formulario'
@@ -12,18 +11,16 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (nombre.length >= 3 && mascota.length >= 6) {      
+    if (nombre.length >= 3 && nombre.trim(nombre) == nombre  && mascota.length >= 6) {
+      
       setMostrar(true)
       setError(false)
     }else{
       setMostrar(false)
       setError(true)
-      setError('Por favor chequea que la información sea correcta')
-      
+      setError('Por favor chequea que la información sea correcta')      
     }
-
   }
-
   return (
     <>
       <Formulario handleSubmit={handleSubmit}  setNombre={setNombre} setMascota={setMascota}/>
@@ -32,6 +29,5 @@ function App() {
     </>
   )
 }
-
 export default App
 
